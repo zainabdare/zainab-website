@@ -1,144 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Explore coursework projects, case studies, and web applications developed by Zainab for Information Systems &amp; Decision Sciences.">
-  <title>Projects | Zainab - Academic Portfolio &amp; Case Studies</title>
+  <meta name="description" content="Explore coursework projects, case studies, and web applications developed by Zainab for Information Systems & Decision Sciences.">
+  <title>Projects | Zainab - Academic Portfolio & Case Studies</title>
+  
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Site Header & Navigation -->
-  <header>
-    <h1>ZainabDare.com</h1>
-    <p><em>Personal Website &amp; Academic Portfolio</em></p>
-    <nav aria-label="Primary Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" id="nav-brand" aria-label="Zainab's Portfolio Homepage">
+        <span class="brand-avatar" aria-hidden="true">Z</span>
+        <span>ZainabDare<span class="gradient-text">.com</span></span>
+      </a>
+      
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" id="nav-home">Home</a></li>
+          <li><a href="project.html" class="active" aria-current="page" id="nav-projects">Projects</a></li>
+          <li><a href="resume.html" id="nav-resume">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <hr>
-
   <!-- Main Content Container -->
-  <main>
-
-    <!-- Page Title & Overview -->
-    <section aria-labelledby="projects-heading">
-      <h1 id="projects-heading">Class Projects &amp; Case Studies</h1>
-      <p>
-        Explore coursework projects, case studies, and web applications developed for Information Systems &amp; Decision Sciences.
-      </p>
-    </section>
-
-    <hr>
-
-    <!-- Project 1: Project Gardenia -->
-    <section aria-labelledby="project-gardenia-heading">
-      <article>
-        <h2 id="project-gardenia-heading">Project Gardenia: Downtown Mixed-Use Concept</h2>
-        <p>
-          <strong>Field:</strong> Architecture &amp; Design |
-          <strong>Status:</strong> Completed May 2025
+  <main id="main-content">
+    <div class="container">
+      
+      <!-- Projects Header -->
+      <section class="section-header" style="text-align: left; margin-bottom: 2.5rem;" aria-labelledby="projects-title">
+        <span class="badge badge-cyan">Featured Showcase</span>
+        <h1 id="projects-title" style="margin-top: 0.5rem;">
+          Class <span class="gradient-text">Projects</span>
+        </h1>
+        <p class="section-subtitle" style="text-align: left; margin-left: 0; margin-right: 0;">
+          Explore coursework projects, case studies, and web applications developed for Information Systems &amp; Decision Sciences.
         </p>
-        <p>
-          A modern design blending city living with community spaces on Frankie St &amp; Foceisn St.
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="grid-2 section-spacing" aria-label="Projects List">
+        
+        <!-- CARD 1: PROJECT GARDENIA: DOWNTOWN MIXED-USE CONCEPT -->
+        <article class="glass-card project-card" id="project-gardenia">
+          <div class="project-card-header">
+            <div class="project-meta">
+              <span class="badge">Architecture &amp; Design</span>
+              <span class="timeline-date">Completed May 2025</span>
+            </div>
+            <h3>Project Gardenia: Downtown Mixed-Use Concept</h3>
+          </div>
+          
+          <p>
+            A modern design blending city living with community spaces on Frankie St &amp; Foceisn St.
+          </p>
+          
+          <ul class="project-features">
+            <li><strong>Team Lead &amp; Field Survey:</strong> Led our team on-site to measure property lines, survey lot conditions, and lead the final project presentation.</li>
+            <li><strong>Dog Park &amp; Pet Eatery:</strong> Designed a commercial retail store and pet-friendly eatery that connects directly to the neighboring dog park.</li>
+            <li><strong>Open Residential Living:</strong> Created an open-concept home layout with high ceilings for airy circulation, plus a large rooftop garden to stay connected with nature.</li>
+            <li><strong>Physical &amp; Color-Coded Models:</strong> Built a 3D block model to separate retail and living spaces, alongside a scale model hand-crafted from precision board.</li>
+          </ul>
+
+          <div class="tags-container">
+            <span class="tag-pill">AutoCAD</span>
+            <span class="tag-pill">Revit</span>
+            <span class="tag-pill">Site Measuring</span>
+            <span class="tag-pill">Scale Modeling</span>
+            <span class="tag-pill">Urban Design</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="javascript:void(0)" id="openModalBtn" class="btn btn-primary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">
+              <span>View Project Board</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 2: CURRENT WEBSITE & AI WORKFLOW -->
+        <article class="glass-card project-card" id="project-personal-website">
+          <div class="project-card-header">
+            <div class="project-meta">
+              <span class="badge badge-cyan">Web Engineering</span>
+              <span class="timeline-date">Active • You Are Here</span>
+            </div>
+            <h3>Zainab Dare — Personal Website</h3>
+          </div>
+          
+          <p>
+            The website you are looking at right now, built from scratch to share my projects, skills, and background.
+          </p>
+          
+          <ul class="project-features">
+            <li><strong>Coded by Hand:</strong> Made using plain HTML and CSS—no website builders like Wix or Squarespace.</li>
+            <li><strong>Built with Antigravity IDE:</strong> Created using Google Antigravity IDE and AI pair programming to write and test the code quickly.</li>
+            <li><strong>Mobile Friendly &amp; Clean:</strong> Designed to look great and work smoothly on both phones and computers.</li>
+            <li><strong>Live on GitHub:</strong> Stored in a GitHub repository and published online with GitHub Pages.</li>
+          </ul>
+
+          <div class="tags-container">
+            <span class="tag-pill">HTML5</span>
+            <span class="tag-pill">CSS3</span>
+            <span class="tag-pill">Antigravity IDE</span>
+            <span class="tag-pill">GitHub Pages</span>
+            <span class="tag-pill">Responsive Design</span>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Bottom Call to Action -->
+      <section class="glass-card section-spacing" id="connect-banner" style="text-align: center; padding: 3rem 2rem;">
+        <h2>Interested in discussing these projects?</h2>
+        <p style="max-width: 540px; margin: 0.5rem auto 1.75rem;">
+          Feel free to explore my full resume or reach out to chat about systems analysis, technical development, or collaborations!
         </p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="resume.html" class="btn btn-primary">Check Out Resume</a>
+          <a href="index.html" class="btn btn-secondary">Return Home</a>
+        </div>
+      </section>
 
-        <h3>Key Contributions &amp; Scope</h3>
-        <ul>
-          <li><strong>Team Lead &amp; Field Survey:</strong> Led our team on-site to measure property lines, survey lot conditions, and lead the final project presentation.</li>
-          <li><strong>Dog Park &amp; Pet Eatery:</strong> Designed a commercial retail store and pet-friendly eatery that connects directly to the neighboring dog park.</li>
-          <li><strong>Open Residential Living:</strong> Created an open-concept home layout with high ceilings for airy circulation, plus a large rooftop garden to stay connected with nature.</li>
-          <li><strong>Physical &amp; Color-Coded Models:</strong> Built a 3D block model to separate retail and living spaces, alongside a scale model hand-crafted from precision board.</li>
-        </ul>
-
-        <h3>Tools &amp; Techniques Used</h3>
-        <p>
-          AutoCAD, Revit, Site Measuring, Scale Modeling, Urban Design
-        </p>
-
-        <h3>Project Board Presentation</h3>
-        <figure>
-          <img src="gardenia-board.jpg" alt="Project Gardenia Architecture Board" width="700">
-          <figcaption>Figure 1: Project Gardenia Architectural Layout &amp; Concept Board</figcaption>
-        </figure>
-      </article>
-    </section>
-
-    <hr>
-
-    <!-- Project 2: Personal Website -->
-    <section aria-labelledby="project-website-heading">
-      <article>
-        <h2 id="project-website-heading">Zainab Dare — Personal Website</h2>
-        <p>
-          <strong>Field:</strong> Web Engineering |
-          <strong>Status:</strong> Active • You Are Here
-        </p>
-        <p>
-          The website you are looking at right now, built from scratch to share my academic projects, skills, and background.
-        </p>
-
-        <h3>Key Features &amp; Implementation</h3>
-        <ul>
-          <li><strong>Coded by Hand:</strong> Built using clean, standard HTML5 markup—no website builders like Wix or Squarespace.</li>
-          <li><strong>Built with Antigravity IDE:</strong> Created using Google Antigravity IDE and AI pair programming to write, review, and test code efficiently.</li>
-          <li><strong>Accessible &amp; Semantic:</strong> Structured with clean semantic tags and data tables for universal cross-platform compatibility.</li>
-          <li><strong>Live on GitHub:</strong> Managed under Git version control and hosted via GitHub Pages.</li>
-        </ul>
-
-        <h3>Technologies Used</h3>
-        <p>
-          HTML5, Antigravity IDE, Git, GitHub Pages, Web Standards
-        </p>
-      </article>
-    </section>
-
-    <hr>
-
-    <!-- Discussion / Inquiry Section -->
-    <section aria-labelledby="inquiry-heading">
-      <h2 id="inquiry-heading">Interested in discussing these projects?</h2>
-      <p>
-        Feel free to explore my full resume or reach out to chat about systems analysis, technical development, or collaborations!
-      </p>
-      <p>
-        <a href="resume.html">Check Out Resume &rarr;</a> |
-        <a href="index.html">Return Home &rarr;</a>
-      </p>
-    </section>
-
+    </div>
   </main>
 
-  <hr>
-
   <!-- Site Footer -->
-  <footer>
-    <h3>ZainabDare.com</h3>
-    <p>Personal website built for the Information Systems and Decision Sciences class project.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>ZainabDare<span class="gradient-text">.com</span></h4>
+          <p>
+            Personal website built for the Information Systems and Decision Sciences class project.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
 
-    <nav aria-label="Footer Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
+        <div class="footer-links">
+          <h5>Project Info</h5>
+          <ul>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Course: ISDS 3100</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Semester: Fall 2026</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Status: Active</span></li>
+          </ul>
+        </div>
+      </div>
 
-    <p>
-      <strong>Course:</strong> ISDS 3100 |
-      <strong>Semester:</strong> Fall 2026 |
-      <strong>Status:</strong> Active
-    </p>
-    <p>&copy; 2026 Zainab Dare. All rights reserved.</p>
-    <p>Built with pure HTML5</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zainab. All rights reserved.</p>
+        <p>Built with HTML5 &amp; Vanilla CSS</p>
+      </div>
+    </div>
   </footer>
-</body>
 
+  <!-- Image Lightbox Modal Overlay -->
+  <div id="imageModal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-label="Project Gardenia Architecture Board Preview">
+    <div class="modal-content">
+      <button id="closeModalBtn" class="modal-close" aria-label="Close modal">&times; Close</button>
+      <img src="gardenia-board.jpg" alt="Project Gardenia Architecture Board" class="modal-image">
+    </div>
+  </div>
+
+  <!-- Modal Interaction Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openModalBtn = document.getElementById('openModalBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const imageModal = document.getElementById('imageModal');
+
+      function openModal() {
+        if (imageModal) {
+          imageModal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function closeModal() {
+        if (imageModal) {
+          imageModal.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+      }
+
+      if (openModalBtn) {
+        openModalBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal();
+        });
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeModal);
+      }
+
+      // Close when clicking outside the image on the backdrop
+      if (imageModal) {
+        imageModal.addEventListener('click', (e) => {
+          if (e.target === imageModal) {
+            closeModal();
+          }
+        });
+      }
+
+      // Close when pressing the Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && imageModal && imageModal.style.display === 'flex') {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</body>
 </html>

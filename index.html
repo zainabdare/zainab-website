@@ -6,184 +6,377 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Personal portfolio and academic website of Zainab, an Information Systems student showcasing coursework, projects, and skills.">
-  <title>Zainab | Personal Website &amp; Academic Portfolio</title>
+  <title>Zainab | Personal Website & Academic Portfolio</title>
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Site Header & Navigation -->
-  <header>
-    <h1>ZainabDare.com</h1>
-    <p><em>Personal Website &amp; Academic Portfolio</em></p>
-    <nav aria-label="Primary Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" id="nav-brand" aria-label="Zainab's Portfolio Homepage">
+        <span class="brand-avatar" aria-hidden="true">Z</span>
+        <span>ZainabDare<span class="gradient-text">.com</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page" id="nav-home">Home</a></li>
+          <li><a href="project.html" id="nav-projects">Projects</a></li>
+          <li><a href="resume.html" id="nav-resume">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <hr>
-
   <!-- Main Content Container -->
-  <main>
+  <main id="main-content">
+    <div class="container">
 
-    <!-- Introduction Section -->
-    <section aria-labelledby="intro-heading">
-      <h2 id="intro-heading">Hi, I'm Zainab Dare</h2>
-      <p>Welcome to my personal academic portfolio.</p>
-      <p>
-        <a href="resume.html">Read My Resume &rarr;</a> |
-        <a href="project.html">View My Projects &rarr;</a>
-      </p>
+      <!-- Hero Section (Single Column Layout) -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <div class="hero-greeting-container">
+            <img src="headshot.jpg" alt="Zainab Dare" class="hero-headshot">
+            <h1 id="hero-title" class="hero-title">
+              Hi, I'm Zainab Dare
+            </h1>
+          </div>
+          <p class="hero-welcome-sub">Welcome to my page</p>
 
-      <h3>Quick Highlights</h3>
-      <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Certifications</th>
-            <th>Honors &amp; Awards</th>
-            <th>Focus Area</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2+ Professional Credentials</td>
-            <td>7+ State &amp; Scholastic Honors</td>
-            <td>Information Systems &amp; Analytics</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+          <!-- Flanked Stats & Action Buttons Row -->
+          <div class="hero-flanked-stats-row">
+            <a href="resume.html" class="btn btn-primary btn-pill hero-flank-btn" id="btn-hero-resume">
+              <span>Read Resume</span>
+              <span aria-hidden="true">→</span>
+            </a>
 
-    <hr>
+            <!-- Center Quick Stats Card -->
+            <div class="profile-card hero-stats-card">
+              <!-- Stats Row -->
+              <div class="profile-stats">
+                <div class="profile-stat-item">
+                  <div class="stat-number">2+</div>
+                  <div class="stat-label">CERTIFICATIONS</div>
+                </div>
+                <div class="profile-stat-item">
+                  <div class="stat-number">7+</div>
+                  <div class="stat-label">AWARDS</div>
+                </div>
+                <div class="profile-stat-item">
+                  <div class="stat-number">100%</div>
+                  <div class="stat-label">PERSONALITY</div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Field of Study Section -->
-    <section aria-labelledby="study-heading">
-      <h2 id="study-heading">What I Study</h2>
-      <p>
-        <strong>Degree Program:</strong> Bachelor of Science in Information Systems &amp; Decision Sciences
-      </p>
-      <p>
-        <strong>Concentration:</strong> Analytics
-      </p>
-      <p>
-        <strong>Institution:</strong> Louisiana State University (E. J. Ourso College of Business)
-      </p>
-    </section>
+            <a href="project.html" class="btn btn-secondary btn-pill hero-flank-btn" id="btn-hero-projects">
+              <span>View Projects</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <hr>
+      <!-- What I Study & Journey Flowchart Section -->
+      <section id="journey" class="section-spacing" aria-labelledby="study-title">
+        <div class="section-header study-header">
+          <h2 id="study-title">What I Study</h2>
+          <div class="study-highlight-card">
+            Information Systems &amp; Decision Sciences with a Concentration in Analytics
+          </div>
+        </div>
 
-    <!-- Personal Journey Timeline Section -->
-    <section aria-labelledby="journey-heading">
-      <h2 id="journey-heading">How Did I Get Here?</h2>
+        <!-- How Did I Get Here? Timeline Heading -->
+        <div class="section-header timeline-header">
+          <h2 id="timeline-title">How Did I Get Here?</h2>
+        </div>
 
-      <h3>Age 8 — Aspiring Teacher</h3>
-      <p>
-        Early on, I dreamed of being an educator, developing a natural passion for explaining complex concepts,
-        mentoring others, and structuring knowledge.
-      </p>
+        <div class="journey-timeline-wrapper">
+          <div class="journey-timeline" aria-label="Interactive Journey Milestones">
 
-      <h3>Age 10 — The Artist</h3>
-      <p>
-        My interests evolved toward visual creativity and design. I was great artistically and won multiple
-        state and scholastic art awards, building an eye for detail and composition.
-      </p>
+            <!-- Milestone 1: Age 8 -->
+            <details class="journey-card" id="journey-milestone-1" open>
+              <summary class="journey-header">
+                <div class="journey-header-left">
+                  <span class="journey-icon" aria-hidden="true">👩‍🏫</span>
+                  <span class="journey-step-badge">Age 8</span>
+                  <h3 class="journey-title">Aspiring Teacher</h3>
+                </div>
+                <div class="journey-chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+              <div class="journey-body">
+                <p>
+                  Early on, I dreamed of being an educator, developing a natural passion for explaining complex
+                  concepts, mentoring others, and structuring knowledge.
+                </p>
+              </div>
+            </details>
 
-      <h3>Age 15 — Roblox Architect &amp; Content Creator</h3>
-      <p>
-        During quarantine, I poured my creativity into Roblox Bloxburg, designing and architecting detailed
-        virtual houses daily. I launched a YouTube channel documenting my builds that scaled to over 1,000
-        subscribers and generated over 1,000,000 views, sparking my fascination with digital systems and user
-        interaction.
-      </p>
+            <!-- Milestone 2: Age 10 -->
+            <details class="journey-card" id="journey-milestone-2">
+              <summary class="journey-header">
+                <div class="journey-header-left">
+                  <span class="journey-icon" aria-hidden="true">🎨</span>
+                  <span class="journey-step-badge">Age 10</span>
+                  <h3 class="journey-title">The Artist</h3>
+                </div>
+                <div class="journey-chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+              <div class="journey-body">
+                <p>
+                  My interests evolved toward visual creativity and design. I was great artistically and won multiple
+                  state and scholastic art awards, building an eye for detail and composition.
+                </p>
+              </div>
+            </details>
 
-      <h3>Age 16–18 — Architectural Drafting &amp; Certifications</h3>
-      <p>
-        Turned digital building into real-world engineering through Houston Community College (HCC), earning
-        my Certificate in Drafting &amp; Design Engineering Technology and professional certifications in
-        AutoCAD and Revit.
-      </p>
+            <!-- Milestone 3: Age 15 -->
+            <details class="journey-card" id="journey-milestone-3">
+              <summary class="journey-header">
+                <div class="journey-header-left">
+                  <span class="journey-icon" aria-hidden="true">🏗️</span>
+                  <span class="journey-step-badge">Age 15</span>
+                  <h3 class="journey-title">Roblox Architect &amp; Content Creator</h3>
+                </div>
+                <div class="journey-chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+              <div class="journey-body">
+                <p>
+                  During quarantine, I poured my creativity into Roblox Bloxburg, designing and architecting detailed
+                  virtual houses daily. I launched a YouTube channel documenting my builds that scaled to over 1,000
+                  subscribers and generated over 1,000,000 views, sparking my fascination with digital systems and user
+                  interaction.
+                </p>
+              </div>
+            </details>
 
-      <h3>Age 18 — Digital Marketing</h3>
-      <p>
-        I was really good with content creation, scaling platforms to over 100K followers and generating over
-        32 million total views. That's why I initially chose digital marketing—because it was what I was
-        naturally good at.
-      </p>
+            <!-- Milestone 4: Age 16–18 -->
+            <details class="journey-card" id="journey-milestone-4">
+              <summary class="journey-header">
+                <div class="journey-header-left">
+                  <span class="journey-icon" aria-hidden="true">📐</span>
+                  <span class="journey-step-badge">Age 16–18</span>
+                  <h3 class="journey-title">Architectural Drafting &amp; Certifications</h3>
+                </div>
+                <div class="journey-chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+              <div class="journey-body">
+                <p>
+                  Turned digital building into real-world engineering through Houston Community College (HCC), earning
+                  my Certificate in Drafting &amp; Design Engineering Technology and professional certifications in
+                  AutoCAD and Revit.
+                </p>
+              </div>
+            </details>
 
-      <h3>Present / College — Information Systems &amp; Decision Sciences</h3>
-      <p>
-        Entering LSU, I realized that while I excelled at content, everything I truly loved doing lived behind
-        the scenes in technology—how systems operate, managing structured data architecture, optimizing
-        processes, and engineering technical workflows. That clarity led me to commit fully to Information
-        Systems &amp; Decision Sciences with an Analytics concentration.
-      </p>
+            <!-- Milestone 5: Age 18 -->
+            <details class="journey-card" id="journey-milestone-5">
+              <summary class="journey-header">
+                <div class="journey-header-left">
+                  <span class="journey-icon" aria-hidden="true">📱</span>
+                  <span class="journey-step-badge">Age 18</span>
+                  <h3 class="journey-title">Digital Marketing</h3>
+                </div>
+                <div class="journey-chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+              <div class="journey-body">
+                <p>
+                  I was really good with content creation, scaling platforms to over 100K followers and generating over
+                  32 million total views. That's why I initially chose digital marketing—because it was what I was
+                  naturally good at.
+                </p>
+              </div>
+            </details>
 
-      <p>
-        <em>
-          Looking back, technology has always been the common denominator across my entire path—from digital
-          building and architectural drafting to scaling online content, and now engineering systems as an
-          Information Systems &amp; Decision Sciences major.
-        </em>
-      </p>
-    </section>
+            <!-- Milestone 6: Present / College -->
+            <details class="journey-card" id="journey-milestone-6" open>
+              <summary class="journey-header">
+                <div class="journey-header-left">
+                  <span class="journey-icon" aria-hidden="true">📈</span>
+                  <span class="journey-step-badge">Present / College</span>
+                  <h3 class="journey-title">Information Systems &amp; Decision Sciences</h3>
+                </div>
+                <div class="journey-chevron" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+              <div class="journey-body">
+                <p>
+                  Entering LSU, I realized that while I excelled at content, everything I truly loved doing lived behind
+                  the scenes in technology—how systems operate, managing structured data architecture, optimizing
+                  processes, and engineering technical workflows. That clarity led me to commit fully to Information
+                  Systems &amp; Decision Sciences with an Analytics concentration.
+                </p>
+              </div>
+            </details>
 
-    <hr>
+          </div>
 
-    <!-- Contact Details Section -->
-    <section aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Get In Touch</h2>
-      <p>Feel free to reach out regarding internship opportunities, collaborations, or coursework inquiries.</p>
+          <!-- Journey Closing Takeaway -->
+          <p class="journey-takeaway">
+            Looking back, technology has always been the common denominator across my entire path—from digital
+            building and architectural drafting to scaling online content, and now engineering systems as an
+            Information Systems &amp; Decision Sciences major.
+          </p>
+        </div>
+      </section>
 
-      <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Channel</th>
-            <th>Contact Information</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>LSU Academic Email</strong></td>
-            <td><a href="mailto:zdare1@lsu.edu">zdare1@lsu.edu</a></td>
-          </tr>
-          <tr>
-            <td><strong>Personal Email</strong></td>
-            <td><a href="mailto:zainabdare07@gmail.com">zainabdare07@gmail.com</a></td>
-          </tr>
-          <tr>
-            <td><strong>Phone Number</strong></td>
-            <td><a href="tel:8323125410">(832) 312-5410</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!-- Contact Me Section -->
+      <section id="contact" class="contact-section section-spacing" aria-labelledby="contact-title">
+        <div class="section-header">
+          <h2 id="contact-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Feel free to reach out regarding internship opportunities, collaborations, or questions.
+          </p>
+        </div>
 
+        <div class="contact-card">
+          <div class="contact-grid">
+
+            <!-- School Email -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">LSU Academic Email</span>
+                <a href="mailto:zdare1@lsu.edu" class="contact-link">zdare1@lsu.edu</a>
+              </div>
+            </div>
+
+            <!-- Personal Email -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Personal Email</span>
+                <a href="mailto:zainabdare07@gmail.com" class="contact-link">zainabdare07@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Phone Number</span>
+                <a href="tel:8323125410" class="contact-link">(832) 312-5410</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <a href="https://www.linkedin.com/in/zainab-dare-b6b320384" target="_blank" rel="noopener noreferrer"
+                  class="contact-link">LinkedIn</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <hr>
-
   <!-- Site Footer -->
-  <footer>
-    <h3>ZainabDare.com</h3>
-    <p>Personal website built for the Information Systems and Decision Sciences class project.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>ZainabDare<span class="gradient-text">.com</span></h4>
+          <p>
+            Personal website built for the Information Systems and Decision Sciences class project.
+          </p>
+        </div>
 
-    <nav aria-label="Footer Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
+        <div class="footer-links">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
 
-    <p>
-      <strong>Course:</strong> ISDS 3100 |
-      <strong>Semester:</strong> Fall 2026 |
-      <strong>Status:</strong> Active
-    </p>
-    <p>&copy; 2026 Zainab Dare. All rights reserved.</p>
-    <p>Built with pure HTML5</p>
+        <div class="footer-links">
+          <h5>Project Info</h5>
+          <ul>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Course: ISDS 3100</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Semester: Fall 2026</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Status: Active</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zainab. All rights reserved.</p>
+        <p>Built with HTML5 &amp; Vanilla CSS</p>
+      </div>
+    </div>
   </footer>
 </body>
 

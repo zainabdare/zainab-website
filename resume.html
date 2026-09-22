@@ -5,330 +5,549 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Resume of Zainab — Information Systems &amp; Decision Sciences student at Louisiana State University. Academic resume detailing education, skills, experience, and leadership.">
-  <title>Resume | Zainab - Academic &amp; Professional Background</title>
+    content="Resume of Zainab — Information Systems & Decision Sciences student at Louisiana State University. Interactive resume detailing education, skills, experience, and leadership.">
+  <title>Resume | Zainab - Academic & Professional Background</title>
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Site Header & Navigation -->
-  <header>
-    <h1>ZainabDare.com</h1>
-    <p><em>Personal Website &amp; Academic Portfolio</em></p>
-    <nav aria-label="Primary Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" id="nav-brand" aria-label="Zainab's Portfolio Homepage">
+        <span class="brand-avatar" aria-hidden="true">Z</span>
+        <span>ZainabDare<span class="gradient-text">.com</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" id="nav-home">Home</a></li>
+          <li><a href="project.html" id="nav-projects">Projects</a></li>
+          <li><a href="resume.html" class="active" aria-current="page" id="nav-resume">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <hr>
-
   <!-- Main Content Container -->
-  <main>
+  <main id="main-content">
+    <div class="container">
 
-    <!-- Resume Header -->
-    <section aria-labelledby="resume-heading">
-      <h1 id="resume-heading">Academic &amp; Professional Resume</h1>
-      <p>
-        Curriculum Vitae detailing education, coursework, professional credentials, competencies, work experience,
-        leadership, and honors.
-      </p>
-      <p>
-        <a href="project.html">View Project Case Studies &rarr;</a> |
-        <a href="index.html">Return to Homepage &rarr;</a>
-      </p>
-    </section>
+      <!-- Page Header with Interactive Controls -->
+      <section class="resume-header" aria-labelledby="resume-heading">
+        <div>
+          <span class="badge">Curriculum Vitae</span>
+          <h1 id="resume-heading">Academic &amp; Professional <span class="gradient-text">Resume</span></h1>
+          <p style="margin-bottom: 0; max-width: 650px;">
+            Interactive portfolio resume. Click any section card below to expand details, or use the quick controls to
+            view everything at once.
+          </p>
+        </div>
 
-    <hr>
+        <!-- Accordion Controls -->
+        <div class="resume-controls">
+          <button type="button" class="btn btn-secondary btn-pill btn-sm" id="btn-expand-all"
+            aria-label="Expand all resume sections">
+            <span>Expand All</span>
+          </button>
+          <button type="button" class="btn btn-secondary btn-pill btn-sm" id="btn-collapse-all"
+            aria-label="Collapse all resume sections">
+            <span>Collapse All</span>
+          </button>
+          <a href="project.html" class="btn btn-primary btn-pill btn-sm">
+            <span>View Projects</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
 
-    <!-- 1. Education -->
-    <section aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
-      <table border="1" cellpadding="8" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>Degree / Credential</th>
-            <th>Institution</th>
-            <th>GPA</th>
-            <th>Graduation / Conferral</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>Bachelor of Science in Information Systems &amp; Decision Sciences</strong><br>
-              Concentration in Analytics
-            </td>
-            <td>Louisiana State University — Baton Rouge, LA</td>
-            <td>4.09 / 4.00</td>
-            <td>Expected May 2028</td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Certificate in Drafting and Design Engineering Technology</strong>
-            </td>
-            <td>Houston Community College — Houston, TX</td>
-            <td>4.00 / 4.00</td>
-            <td>Conferred May 2025</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!-- Accordion Stack -->
+      <section class="resume-accordion-list" aria-label="Resume Sections">
 
-    <hr>
+        <!-- 1. Education -->
+        <details class="resume-card" id="section-education" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">🎓</span>
+              <h2 class="resume-card-title">Education</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">2 Programs</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
 
-    <!-- 2. Relevant Coursework -->
-    <section aria-labelledby="coursework-heading">
-      <h2 id="coursework-heading">Relevant Coursework</h2>
-      <table border="1" cellpadding="8" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>Focus Area</th>
-            <th>Course Title</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Analytics &amp; Quantitative Methods</td>
-            <td>Business Statistics &amp; Analytics I</td>
-          </tr>
-          <tr>
-            <td>Foundations of Tech</td>
-            <td>Foundations of Information Systems</td>
-          </tr>
-          <tr>
-            <td>Organizational Leadership</td>
-            <td>Principles of Management</td>
-          </tr>
-          <tr>
-            <td>Solution Architecture</td>
-            <td>Design of Information Solutions</td>
-          </tr>
-          <tr>
-            <td>Systems Engineering</td>
-            <td>Analysis &amp; Design of IS</td>
-          </tr>
-          <tr>
-            <td>Project Leadership</td>
-            <td>MIS Project Management</td>
-          </tr>
-          <tr>
-            <td>Enterprise Infrastructure</td>
-            <td>Enterprise Architecture</td>
-          </tr>
-          <tr>
-            <td>Database &amp; Data Models</td>
-            <td>Data &amp; Information Management</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">Bachelor of Science in Information Systems &amp; Decision Sciences / Analytics
+                  </h3>
+                  <div class="entry-subtitle">Louisiana State University — Baton Rouge, LA</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag success">GPA: 4.09 / 4.00</span>
+                  <span class="pill-tag highlight">Expected Graduation: May 2028</span>
+                </div>
+              </div>
+            </article>
 
-    <hr>
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">Certificate: Drafting and Design Engineering Technology</h3>
+                  <div class="entry-subtitle">Houston Community College — Houston, TX</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag success">GPA: 4.00 / 4.00</span>
+                  <span class="pill-tag">Conferred: May 2025</span>
+                </div>
+              </div>
+            </article>
 
-    <!-- 3. Certifications -->
-    <section aria-labelledby="certifications-heading">
-      <h2 id="certifications-heading">Certifications</h2>
-      <table border="1" cellpadding="8" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>Credential Name</th>
-            <th>Issuing Body</th>
-            <th>Credential Type</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Autodesk Certified User: AutoCAD</strong></td>
-            <td>Certiport</td>
-            <td>Industry Credential</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td><strong>Certified User: Revit</strong></td>
-            <td>Houston Community College</td>
-            <td>Academic Credential</td>
-            <td>2025</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+          </div>
+        </details>
 
-    <hr>
+        <!-- 2. Relevant Coursework -->
+        <details class="resume-card" id="section-coursework" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">📚</span>
+              <h2 class="resume-card-title">Relevant Coursework</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">8 Core Subjects</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
+            <div class="coursework-grid">
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">📊</span>
+                <span class="course-name">Business Statistics &amp; Analytics I</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">💻</span>
+                <span class="course-name">Foundations of Information Systems</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">🏛️</span>
+                <span class="course-name">Principles of Management</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">⚙️</span>
+                <span class="course-name">Design of Information Solutions</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">📐</span>
+                <span class="course-name">Analysis &amp; Design of IS</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">📋</span>
+                <span class="course-name">MIS Project Management</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">🏗️</span>
+                <span class="course-name">Enterprise Architecture</span>
+              </div>
+              <div class="course-card">
+                <span class="course-icon" aria-hidden="true">🗄️</span>
+                <span class="course-name">Data &amp; Information Management</span>
+              </div>
+            </div>
+          </div>
+        </details>
 
-    <!-- 4. Technical & Non-Technical Skills -->
-    <section aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Technical &amp; Non-Technical Skills</h2>
-      <table border="1" cellpadding="8" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Competencies &amp; Tools</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Software &amp; Tools</strong></td>
-            <td>Microsoft Office Suite (Word, Excel, PowerPoint), AutoCAD, Revit, Adobe Illustrator, Adobe Photoshop,
-              Canva</td>
-          </tr>
-          <tr>
-            <td><strong>Core Competencies</strong></td>
-            <td>Data &amp; Information Management, Enterprise Architecture, Strategic Management, Systems Analysis,
-              Process Optimization</td>
-          </tr>
-          <tr>
-            <td><strong>Languages</strong></td>
-            <td>English (Fluent), Yoruba (Native Proficiency), Bilingual Communication</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <!-- 3. Certifications -->
+        <details class="resume-card" id="section-certifications" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">📜</span>
+              <h2 class="resume-card-title">Certifications</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">2 Credentials</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
+            <div class="cert-grid">
 
-    <hr>
+              <div class="cert-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                  <span class="badge badge-cyan">Industry Credential</span>
+                  <span class="pill-tag">2024</span>
+                </div>
+                <h3 class="cert-title">Autodesk Certified User: AutoCAD</h3>
+                <div class="cert-issuer">Issued by Certiport</div>
+              </div>
 
-    <!-- 5. Professional Experience -->
-    <section aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Professional Experience</h2>
+              <div class="cert-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                  <span class="badge">Academic Credential</span>
+                  <span class="pill-tag">2025</span>
+                </div>
+                <h3 class="cert-title">Certified User: Revit</h3>
+                <div class="cert-issuer">Houston Community College</div>
+              </div>
 
-      <article>
-        <h3>STEM Camp Instructor — Lavner Education</h3>
-        <p><strong>Timeline:</strong> May 2026 – August 2026</p>
-        <ul>
-          <li>Deliver 9 advanced STEAM curriculum to students, lead interactive lessons on innovative topics including
-            AI, coding, and 3D modeling.</li>
-          <li>Provide real-time technical support, resolving complex systems and connectivity issues immediately to
-            maintain seamless classroom operations.</li>
-          <li>Mentor and guide students in a high-energy, professional academic environment on a premier university
-            campus.</li>
-        </ul>
-      </article>
+            </div>
+          </div>
+        </details>
 
-      <article>
-        <h3>Content Creator — Peace Out Skincare</h3>
-        <p><strong>Timeline:</strong> January 2024 – July 2024</p>
-        <ul>
-          <li>Analyzed audience engagement metrics to produce and edit over 12 high-performing content pieces,
-            optimizing educational reach for skincare products.</li>
-          <li>Traveled to on-location photoshoots to develop high-quality content assets, contributing to campaigns.
-          </li>
-          <li>Evaluated product performance and consumer sentiment across various skincare lines to provide actionable
-            feedback for social media growth strategies.</li>
-        </ul>
-      </article>
-    </section>
+        <!-- 4. Technical & Non-Technical Skills -->
+        <details class="resume-card" id="section-skills" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">🛠️</span>
+              <h2 class="resume-card-title">Technical &amp; Non-Technical Skills</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">Software, Competencies &amp; Languages</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
+            <div class="skills-wrapper">
 
-    <hr>
+              <div class="skill-category">
+                <h4><span aria-hidden="true">💻</span> Software &amp; Tools</h4>
+                <div class="tags-group">
+                  <span class="tag">Microsoft Office Suite</span>
+                  <span class="tag">Microsoft Word</span>
+                  <span class="tag">Microsoft Excel</span>
+                  <span class="tag">Microsoft PowerPoint</span>
+                  <span class="tag">AutoCAD</span>
+                  <span class="tag">Revit</span>
+                  <span class="tag">Adobe Illustrator</span>
+                  <span class="tag">Adobe Photoshop</span>
+                  <span class="tag">Canva</span>
+                </div>
+              </div>
 
-    <!-- 6. Leadership & Organizations -->
-    <section aria-labelledby="leadership-heading">
-      <h2 id="leadership-heading">Leadership &amp; Organizations</h2>
+              <div class="skill-category">
+                <h4><span aria-hidden="true">🧠</span> Core Competencies</h4>
+                <div class="tags-group">
+                  <span class="tag">Data &amp; Information Management</span>
+                  <span class="tag">Enterprise Architecture</span>
+                  <span class="tag">Strategic Management</span>
+                  <span class="tag">Systems Analysis</span>
+                  <span class="tag">Process Optimization</span>
+                </div>
+              </div>
 
-      <article>
-        <h3>Chief of Staff — Tiger Trail Ride</h3>
-        <p><strong>Timeline:</strong> August 2026 – Present</p>
-        <ul>
-          <li>Implemented an updated accountability framework for organizational officers, overseeing point-tracking
-            systems, and evaluating team performance to ensure operational consistency.</li>
-        </ul>
-      </article>
+              <div class="skill-category">
+                <h4><span aria-hidden="true">🌍</span> Languages</h4>
+                <div class="tags-group">
+                  <span class="tag">English (Fluent)</span>
+                  <span class="tag">Yoruba (Native Proficiency)</span>
+                  <span class="tag">Bilingual Communication</span>
+                </div>
+              </div>
 
-      <article>
-        <h3>Public Relations — African Student Organization (ASO)</h3>
-        <p><strong>Timeline:</strong> August 2026 – Present</p>
-        <ul>
-          <li>Managed ASO social media accounts by posting bi-weekly updates, covering live events, and engaging
-            directly with the community.</li>
-          <li>Partnered with cross-functional teams to amplify event promotion and outreach campaigns.</li>
-        </ul>
-      </article>
+            </div>
+          </div>
+        </details>
 
-      <article>
-        <h3>Treasurer | Class Officer — Alief Taylor High School</h3>
-        <p><strong>Timeline:</strong> November 2021 – May 2025</p>
-        <ul>
-          <li>Managed and reconciled a comprehensive budget for class of 2025 students, ensuring 100% financial
-            transparency &amp; zero variance across all major accounts.</li>
-        </ul>
-      </article>
-    </section>
+        <!-- 5. Professional Experience -->
+        <details class="resume-card" id="section-experience" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">💼</span>
+              <h2 class="resume-card-title">Professional Experience</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">Lavner Education &amp; Peace Out Skincare</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
 
-    <hr>
+            <!-- Lavner Education -->
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">STEM Camp Instructor</h3>
+                  <div class="entry-subtitle">Lavner Education</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag highlight">May 2026 – August 2026</span>
+                </div>
+              </div>
+              <ul class="entry-bullets">
+                <li>Deliver 9 advanced STEAM curriculum to students, lead interactive lessons on innovative topics
+                  including AI, coding, and 3D modeling.</li>
+                <li>Provide real-time technical support, resolving complex systems and connectivity issues immediately
+                  to maintain seamless classroom operations.</li>
+                <li>Mentor and guide students in a high-energy, professional academic environment on a premier
+                  university campus.</li>
+              </ul>
+            </article>
 
-    <!-- 7. Honors & Activities -->
-    <section aria-labelledby="honors-heading">
-      <h2 id="honors-heading">Honors &amp; Activities</h2>
-      <table border="1" cellpadding="8" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>Honor / Distinction</th>
-            <th>Date / Period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Candidate, INROADS Internship Program</td>
-            <td>August 2026 – Present</td>
-          </tr>
-          <tr>
-            <td>State Visual Art Scholastic Event Medalist</td>
-            <td>2025</td>
-          </tr>
-          <tr>
-            <td>Visual Art Scholastic Event 3X Medalist</td>
-            <td>2024 &amp; 2025</td>
-          </tr>
-          <tr>
-            <td>Scholastic Art &amp; Writing Silver Key</td>
-            <td>2024 &amp; 2025</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+            <!-- Peace Out Skincare -->
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">Content Creator</h3>
+                  <div class="entry-subtitle">Peace Out Skincare</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag">January 2024 – July 2024</span>
+                </div>
+              </div>
+              <ul class="entry-bullets">
+                <li>Analyzed audience engagement metrics to produce and edit over 12 high-performing content pieces,
+                  optimizing educational reach for skincare products.</li>
+                <li>Traveled to on-location photoshoots to develop high-quality content assets, contributing to
+                  campaigns.</li>
+                <li>Evaluated product performance and consumer sentiment across various skincare lines to provide
+                  actionable feedback for social media growth strategies.</li>
+              </ul>
+            </article>
 
-    <hr>
+          </div>
+        </details>
 
-    <!-- Projects Link Callout -->
-    <section aria-labelledby="explore-projects-heading">
-      <h2 id="explore-projects-heading">Looking for project details?</h2>
-      <p>
-        Take a look at my project showcase to see systems analysis, architectural modeling, and web engineering case
-        studies in action.
-      </p>
-      <p>
-        <a href="project.html">Browse Project Showcase &rarr;</a> |
-        <a href="index.html">Return Home &rarr;</a>
-      </p>
-    </section>
+        <!-- 6. Leadership & Organizations -->
+        <details class="resume-card" id="section-leadership" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">🤝</span>
+              <h2 class="resume-card-title">Leadership &amp; Organizations</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">Tiger Trail Ride, ASO &amp; Class Officer</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
 
+            <!-- Tiger Trail Ride -->
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">Chief of Staff</h3>
+                  <div class="entry-subtitle">Tiger Trail Ride</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag highlight">August 2026 – Present</span>
+                </div>
+              </div>
+              <ul class="entry-bullets">
+                <li>Implemented an updated accountability framework for organizational officers, overseeing
+                  point-tracking systems, and evaluating team performance to ensure operational consistency.</li>
+              </ul>
+            </article>
+
+            <!-- African Student Organization -->
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">Public Relations</h3>
+                  <div class="entry-subtitle">African Student Organization (ASO)</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag highlight">August 2026 – Present</span>
+                </div>
+              </div>
+              <ul class="entry-bullets">
+                <li>Managed ASO social media accounts by posting bi-weekly updates, covering live events, and engaging
+                  directly with the community.</li>
+                <li>Partnered with cross-functional teams to amplify event promotion and outreach campaigns.</li>
+              </ul>
+            </article>
+
+            <!-- Class Treasurer -->
+            <article class="resume-entry">
+              <div class="entry-header">
+                <div>
+                  <h3 class="entry-title">Treasurer | Class Officer</h3>
+                  <div class="entry-subtitle">Alief Taylor High School</div>
+                </div>
+                <div class="entry-meta">
+                  <span class="pill-tag">November 2021 – May 2025</span>
+                </div>
+              </div>
+              <ul class="entry-bullets">
+                <li>Managed and reconciled a comprehensive budget for class of 2025 students, ensuring 100% financial
+                  transparency &amp; zero variance across all major accounts.</li>
+              </ul>
+            </article>
+
+          </div>
+        </details>
+
+        <!-- 7. Honors & Activities -->
+        <details class="resume-card" id="section-honors" open>
+          <summary class="resume-card-header">
+            <div class="resume-card-header-left">
+              <span class="resume-card-icon" aria-hidden="true">🏆</span>
+              <h2 class="resume-card-title">Honors &amp; Activities</h2>
+            </div>
+            <div class="resume-card-header-right">
+              <span class="resume-badge">4 Distinctions</span>
+              <div class="resume-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </summary>
+          <div class="resume-card-body">
+            <div class="honors-list">
+
+              <div class="honor-item">
+                <span class="honor-icon" aria-hidden="true">🌟</span>
+                <div>
+                  <div class="honor-text">Candidate, INROADS Internship Program</div>
+                  <div class="honor-date">August 2026 – Present</div>
+                </div>
+              </div>
+
+              <div class="honor-item">
+                <span class="honor-icon" aria-hidden="true">🥇</span>
+                <div>
+                  <div class="honor-text">State Visual Art Scholastic Event Medalist</div>
+                  <div class="honor-date">2025</div>
+                </div>
+              </div>
+
+              <div class="honor-item">
+                <span class="honor-icon" aria-hidden="true">🎨</span>
+                <div>
+                  <div class="honor-text">Visual Art Scholastic Event 3X Medalist</div>
+                  <div class="honor-date">2024 &amp; 2025</div>
+                </div>
+              </div>
+
+              <div class="honor-item">
+                <span class="honor-icon" aria-hidden="true">🥈</span>
+                <div>
+                  <div class="honor-text">Scholastic Art &amp; Writing Silver Key</div>
+                  <div class="honor-date">2024 &amp; 2025</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </details>
+
+      </section>
+
+      <!-- Bottom Callout -->
+      <section class="glass-card section-spacing" id="connect-banner" style="text-align: center; padding: 3rem 2rem;">
+        <h2>Looking for project details?</h2>
+        <p style="max-width: 550px; margin: 0.5rem auto 1.75rem;">
+          Take a look at my project showcase to see systems analysis, database modeling, and front-end development case
+          studies in action.
+        </p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="project.html" class="btn btn-primary">Browse Project Showcase</a>
+          <a href="index.html" class="btn btn-secondary">Return Home</a>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <hr>
-
   <!-- Site Footer -->
-  <footer>
-    <h3>ZainabDare.com</h3>
-    <p>Personal website built for the Information Systems and Decision Sciences class project.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>ZainabDare<span class="gradient-text">.com</span></h4>
+          <p>
+            Personal website built for the Information Systems and Decision Sciences class project.
+          </p>
+        </div>
 
-    <nav aria-label="Footer Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
+        <div class="footer-links">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
 
-    <p>
-      <strong>Course:</strong> ISDS 3100 |
-      <strong>Semester:</strong> Fall 2026 |
-      <strong>Status:</strong> Active
-    </p>
-    <p>&copy; 2026 Zainab Dare. All rights reserved.</p>
-    <p>Built with pure HTML5</p>
+        <div class="footer-links">
+          <h5>Project Info</h5>
+          <ul>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Course: ISDS 3100</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Semester: Fall 2026</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.9rem;">Status: Active</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zainab. All rights reserved.</p>
+        <p>Built with HTML5 &amp; Vanilla CSS</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Lightweight Script for Expand All / Collapse All Interactions -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const allResumeCards = document.querySelectorAll('details.resume-card, .resume-card');
+      const btnExpandAll = document.getElementById('btn-expand-all');
+      const btnCollapseAll = document.getElementById('btn-collapse-all');
+
+      if (btnExpandAll && btnCollapseAll) {
+        btnExpandAll.addEventListener('click', () => {
+          allResumeCards.forEach(card => card.open = true);
+        });
+
+        btnCollapseAll.addEventListener('click', () => {
+          allResumeCards.forEach(card => card.open = false);
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
