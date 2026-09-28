@@ -8,6 +8,9 @@
     content="Personal portfolio and academic website of Zainab, an Information Systems student showcasing coursework, projects, and skills.">
   <title>Zainab | Personal Website & Academic Portfolio</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <!-- Google Fonts Preconnect & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,8 +57,8 @@
   <main id="main-content">
     <div class="container">
 
-      <!-- Hero Section (Single Column Layout) -->
-      <section class="hero-section" aria-labelledby="hero-title">
+      <!-- Hero / Profile Section -->
+      <section id="profile" class="hero-section" aria-labelledby="hero-title">
         <div class="hero-content">
           <div class="hero-greeting-container">
             <img src="headshot.jpg" alt="Zainab Dare" class="hero-headshot">
@@ -267,6 +270,82 @@
             building and architectural drafting to scaling online content, and now engineering systems as an
             Information Systems &amp; Decision Sciences major.
           </p>
+        </div>
+      </section>
+
+      <!-- Skills Hub Section -->
+      <section id="skills" class="section-spacing" aria-labelledby="skills-title">
+        <div class="section-header">
+          <h2 id="skills-title">Skills</h2>
+          <p class="section-subtitle">
+            A short preview of core technical proficiencies, analytical tools, and professional strengths.
+          </p>
+        </div>
+
+        <div class="skills-hub-card">
+          <div class="skills-hub-tags" aria-label="Skills highlights">
+            <span class="tag-pill">Microsoft Excel</span>
+            <span class="tag-pill">AutoCAD</span>
+            <span class="tag-pill">Revit</span>
+            <span class="tag-pill">Adobe Photoshop</span>
+            <span class="tag-pill">Data &amp; Information Management</span>
+            <span class="tag-pill">Systems Analysis</span>
+            <span class="tag-pill">Bilingual: English &amp; Yoruba</span>
+          </div>
+
+          <div class="section-cta-wrap">
+            <a href="resume.html#section-skills" class="btn btn-secondary btn-pill" id="link-all-skills">See all skills
+              &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Hub Section -->
+      <section id="experience" class="section-spacing" aria-labelledby="experience-title">
+        <div class="section-header">
+          <h2 id="experience-title">Experience</h2>
+          <p class="section-subtitle">
+            Selected leadership and instructional roles in technology and operations.
+          </p>
+        </div>
+
+        <div class="grid-2 experience-hub-grid">
+          <!-- Card 1: STEM Camp Instructor -->
+          <article class="experience-card" aria-label="STEM Camp Instructor — Lavner Education (May–Aug 2026)"
+            title="STEM Camp Instructor — Lavner Education (May–Aug 2026)">
+            <div class="experience-card-header">
+              <div class="experience-card-heading">
+                <h3 class="experience-card-role">STEM Camp Instructor</h3>
+                <div class="experience-card-company">Lavner Education</div>
+              </div>
+              <span class="pill-tag highlight">May–Aug 2026</span>
+            </div>
+            <p class="experience-card-summary">
+              Delivered advanced STEAM lessons on AI, coding, and 3D modeling while providing real-time classroom
+              technical support.
+            </p>
+          </article>
+
+          <!-- Card 2: Chief of Staff -->
+          <article class="experience-card" aria-label="Chief of Staff — Tiger Trail Ride (Aug 2026–Present)"
+            title="Chief of Staff — Tiger Trail Ride (Aug 2026–Present)">
+            <div class="experience-card-header">
+              <div class="experience-card-heading">
+                <h3 class="experience-card-role">Chief of Staff</h3>
+                <div class="experience-card-company">Tiger Trail Ride</div>
+              </div>
+              <span class="pill-tag highlight">Aug 2026–Present</span>
+            </div>
+            <p class="experience-card-summary">
+              Implemented officer accountability frameworks and point-tracking systems to evaluate team performance and
+              ensure operational consistency.
+            </p>
+          </article>
+        </div>
+
+        <div class="section-cta-wrap">
+          <a href="resume.html#section-experience" class="btn btn-secondary btn-pill" id="link-full-resume">View full
+            resume &rarr;</a>
         </div>
       </section>
 
