@@ -5,8 +5,8 @@ A personal web portfolio built as part of the ISDS 3100 AI Lab: Vibe Coding Exer
 ## Project Structure & Features
 - `index.html`: Hub page containing profile, skills, experience highlights, and contact information.
 - Subpages: Detailed pages expanding on hub content (projects/case studies, detailed background).
-- `style.css`: Custom responsive styles supporting mobile and desktop viewports without horizontal overflow.
-- `script.js`: Client-side interactivity and navigation behavior.
+- `styles.css`: Custom responsive styles supporting mobile and desktop viewports without horizontal overflow.
+- Inline scripts: Expand All / Collapse All controls on resume.html and the project board modal on project.html.
 
 ## Deployment
 - **Repository:** https://github.com/zainabdare/zainab-website.git

@@ -31,7 +31,16 @@
         <span>ZainabDare<span class="gradient-text">.com</span></span>
       </a>
 
-      <nav class="main-nav" aria-label="Primary Navigation">
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" id="primary-nav" aria-label="Primary Navigation">
         <ul class="nav-links">
           <li><a href="index.html" id="nav-home">Home</a></li>
           <li><a href="project.html" id="nav-projects">Projects</a></li>
@@ -312,7 +321,7 @@
                 </div>
               </div>
               <ul class="entry-bullets">
-                <li>Deliver 9 advanced STEAM curriculum to students, lead interactive lessons on innovative topics
+                <li>Delivered 9 advanced STEAM lessons to students, leading interactive sessions on innovative topics
                   including AI, coding, and 3D modeling.</li>
                 <li>Provide real-time technical support, resolving complex systems and connectivity issues immediately
                   to maintain seamless classroom operations.</li>
@@ -548,6 +557,9 @@
       }
     });
   </script>
+
+  <!-- Mobile Navigation Script -->
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore coursework projects, case studies, and web applications developed by Zainab for Information Systems & Decision Sciences.">
+  <meta name="description"
+    content="Explore coursework projects, case studies, and web applications developed by Zainab for Information Systems & Decision Sciences.">
   <title>Projects | Zainab - Academic Portfolio & Case Studies</title>
-  
+
   <!-- Google Fonts Preconnect & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -25,8 +30,17 @@
         <span class="brand-avatar" aria-hidden="true">Z</span>
         <span>ZainabDare<span class="gradient-text">.com</span></span>
       </a>
-      
-      <nav class="main-nav" aria-label="Primary Navigation">
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" id="primary-nav" aria-label="Primary Navigation">
         <ul class="nav-links">
           <li><a href="index.html" id="nav-home">Home</a></li>
           <li><a href="project.html" class="active" aria-current="page" id="nav-projects">Projects</a></li>
@@ -39,7 +53,7 @@
   <!-- Main Content Container -->
   <main id="main-content">
     <div class="container">
-      
+
       <!-- Projects Header -->
       <section class="section-header" style="text-align: left; margin-bottom: 2.5rem;" aria-labelledby="projects-title">
         <span class="badge badge-cyan">Featured Showcase</span>
@@ -47,13 +61,14 @@
           Class <span class="gradient-text">Projects</span>
         </h1>
         <p class="section-subtitle" style="text-align: left; margin-left: 0; margin-right: 0;">
-          Explore coursework projects, case studies, and web applications developed for Information Systems &amp; Decision Sciences.
+          Explore coursework projects, case studies, and web applications developed for Information Systems &amp;
+          Decision Sciences.
         </p>
       </section>
 
       <!-- Projects Grid -->
       <section class="grid-2 section-spacing" aria-label="Projects List">
-        
+
         <!-- CARD 1: PROJECT GARDENIA: DOWNTOWN MIXED-USE CONCEPT -->
         <article class="glass-card project-card" id="project-gardenia">
           <div class="project-card-header">
@@ -63,16 +78,20 @@
             </div>
             <h3>Project Gardenia: Downtown Mixed-Use Concept</h3>
           </div>
-          
+
           <p>
-            A modern design blending city living with community spaces on Frankie St &amp; Foceisn St.
+            A modern design blending city living with community spaces on Franklin St &amp; Congress St.
           </p>
-          
+
           <ul class="project-features">
-            <li><strong>Team Lead &amp; Field Survey:</strong> Led our team on-site to measure property lines, survey lot conditions, and lead the final project presentation.</li>
-            <li><strong>Dog Park &amp; Pet Eatery:</strong> Designed a commercial retail store and pet-friendly eatery that connects directly to the neighboring dog park.</li>
-            <li><strong>Open Residential Living:</strong> Created an open-concept home layout with high ceilings for airy circulation, plus a large rooftop garden to stay connected with nature.</li>
-            <li><strong>Physical &amp; Color-Coded Models:</strong> Built a 3D block model to separate retail and living spaces, alongside a scale model hand-crafted from precision board.</li>
+            <li><strong>Team Lead &amp; Field Survey:</strong> Led our team on-site to measure property lines, survey
+              lot conditions, and lead the final project presentation.</li>
+            <li><strong>Dog Park &amp; Pet Eatery:</strong> Designed a commercial retail store and pet-friendly eatery
+              that connects directly to the neighboring dog park.</li>
+            <li><strong>Open Residential Living:</strong> Created an open-concept home layout with high ceilings for
+              airy circulation, plus a large rooftop garden to stay connected with nature.</li>
+            <li><strong>Physical &amp; Color-Coded Models:</strong> Built a 3D block model to separate retail and living
+              spaces, alongside a scale model hand-crafted from precision board.</li>
           </ul>
 
           <div class="tags-container">
@@ -84,7 +103,8 @@
           </div>
 
           <div class="project-actions">
-            <a href="javascript:void(0)" id="openModalBtn" class="btn btn-primary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">
+            <a href="javascript:void(0)" id="openModalBtn" class="btn btn-primary"
+              style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">
               <span>View Project Board</span>
             </a>
           </div>
@@ -99,16 +119,20 @@
             </div>
             <h3>Zainab Dare — Personal Website</h3>
           </div>
-          
+
           <p>
             The website you are looking at right now, built from scratch to share my projects, skills, and background.
           </p>
-          
+
           <ul class="project-features">
-            <li><strong>Coded by Hand:</strong> Made using plain HTML and CSS—no website builders like Wix or Squarespace.</li>
-            <li><strong>Built with Antigravity IDE:</strong> Created using Google Antigravity IDE and AI pair programming to write and test the code quickly.</li>
-            <li><strong>Mobile Friendly &amp; Clean:</strong> Designed to look great and work smoothly on both phones and computers.</li>
-            <li><strong>Live on GitHub:</strong> Stored in a GitHub repository and published online with GitHub Pages.</li>
+            <li><strong>Coded by Hand:</strong> Made using plain HTML and CSS—no website builders like Wix or
+              Squarespace.</li>
+            <li><strong>Built with Antigravity IDE:</strong> Created using Google Antigravity IDE and AI pair
+              programming to write and test the code quickly.</li>
+            <li><strong>Mobile Friendly &amp; Clean:</strong> Designed to look great and work smoothly on both phones
+              and computers.</li>
+            <li><strong>Live on GitHub:</strong> Stored in a GitHub repository and published online with GitHub Pages.
+            </li>
           </ul>
 
           <div class="tags-container">
@@ -126,7 +150,8 @@
       <section class="glass-card section-spacing" id="connect-banner" style="text-align: center; padding: 3rem 2rem;">
         <h2>Interested in discussing these projects?</h2>
         <p style="max-width: 540px; margin: 0.5rem auto 1.75rem;">
-          Feel free to explore my full resume or reach out to chat about systems analysis, technical development, or collaborations!
+          Feel free to explore my full resume or reach out to chat about systems analysis, technical development, or
+          collaborations!
         </p>
         <div class="btn-group" style="justify-content: center;">
           <a href="resume.html" class="btn btn-primary">Check Out Resume</a>
@@ -147,7 +172,7 @@
             Personal website built for the Information Systems and Decision Sciences class project.
           </p>
         </div>
-        
+
         <div class="footer-links">
           <h5>Navigation</h5>
           <ul>
@@ -175,7 +200,8 @@
   </footer>
 
   <!-- Image Lightbox Modal Overlay -->
-  <div id="imageModal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-label="Project Gardenia Architecture Board Preview">
+  <div id="imageModal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true"
+    aria-label="Project Gardenia Architecture Board Preview">
     <div class="modal-content">
       <button id="closeModalBtn" class="modal-close" aria-label="Close modal">&times; Close</button>
       <img src="gardenia-board.jpg" alt="Project Gardenia Architecture Board" class="modal-image">
@@ -231,5 +257,9 @@
       });
     });
   </script>
+
+  <!-- Mobile Navigation Script -->
+  <script src="script.js"></script>
 </body>
+
 </html>

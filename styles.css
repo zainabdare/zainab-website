@@ -8,25 +8,35 @@
 
 :root {
   /* Color Palette - Flat Modern Editorial */
-  --bg-primary: #eef3ee;          /* Soft muted pale mint/sage canvas */
-  --bg-secondary: #e5ece5;        /* Soft sage tint for containers & footers */
-  --bg-surface: #ffffff;          /* Crisp flat white for cards */
+  --bg-primary: #eef3ee;
+  /* Soft muted pale mint/sage canvas */
+  --bg-secondary: #e5ece5;
+  /* Soft sage tint for containers & footers */
+  --bg-surface: #ffffff;
+  /* Crisp flat white for cards */
   --bg-surface-card: #ffffff;
   --bg-surface-hover: #f7faf7;
 
-  --border-subtle: #d8e2d8;       /* Thin, flat minimal border */
-  --border-highlight: #b8ccb8;    /* Slightly darker sage border for active states */
+  --border-subtle: #d8e2d8;
+  /* Thin, flat minimal border */
+  --border-highlight: #b8ccb8;
+  /* Slightly darker sage border for active states */
 
-  --text-primary: #1c3b32;        /* Deep forest/hunter green */
-  --text-secondary: #445650;      /* Muted slate-forest with relaxed tone */
-  --text-muted: #6b7f78;          /* Light slate-forest */
+  --text-primary: #1c3b32;
+  /* Deep forest/hunter green */
+  --text-secondary: #445650;
+  /* Muted slate-forest with relaxed tone */
+  --text-muted: #6b7f78;
+  /* Light slate-forest */
   --text-highlight: #1c3b32;
 
-  --accent-primary: #1c3b32;      /* Solid deep forest green */
-  --accent-primary-hover: #2a5247;/* Lighter forest green on hover */
+  --accent-primary: #1c3b32;
+  /* Solid deep forest green */
+  --accent-primary-hover: #2a5247;
+  /* Lighter forest green on hover */
   --accent-secondary: #2f594d;
   --accent-soft: #dce7dc;
-  
+
   /* Shadows & Glows - Fully Flattened */
   --shadow-none: none;
   --shadow-sm: none;
@@ -44,7 +54,8 @@
   --header-height: 76px;
   --radius-sm: 8px;
   --radius-md: 14px;
-  --radius-lg: 18px;             /* Smooth rounded corners */
+  --radius-lg: 18px;
+  /* Smooth rounded corners */
   --radius-full: 9999px;
 
   /* Transitions */
@@ -56,7 +67,9 @@
    CSS Reset & Base Rules
    ========================================================================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -150,7 +163,12 @@ main {
    Typography
    ========================================================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   line-height: 1.25;
@@ -317,6 +335,54 @@ p {
   font-weight: 600;
 }
 
+/* Mobile Navigation Hamburger Toggle (Hidden on Desktop) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  z-index: 101;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  background-color: var(--bg-secondary);
+}
+
+.menu-toggle .hamburger-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transform-origin: center;
+}
+
+/* Hamburger to 'X' animation */
+.menu-toggle.is-active .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menu-toggle.is-active .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ==========================================================================
    Buttons & Badges (Flat Editorial)
    ========================================================================== */
@@ -440,11 +506,15 @@ p {
 .hero-headshot {
   width: 135px;
   height: 135px;
-  border-radius: 50%; /* perfect circle */
-  object-fit: cover; /* prevents image stretching */
+  border-radius: 50%;
+  /* perfect circle */
+  object-fit: cover;
+  /* prevents image stretching */
   display: block;
-  border: 2.5px solid #1c3b32; /* crisp forest-green outline */
-  box-shadow: none; /* keep completely flat */
+  border: 2.5px solid #1c3b32;
+  /* crisp forest-green outline */
+  box-shadow: none;
+  /* keep completely flat */
   margin-right: 20px;
   flex-shrink: 0;
 }
@@ -1482,6 +1552,97 @@ details.resume-card[open] .resume-chevron {
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    height: var(--header-height);
+  }
+
+  .header-container {
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .brand-logo {
+    white-space: nowrap;
+    gap: 0.6rem;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .brand-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+  }
+
+  /* Show hamburger button at 768px and below */
+  .menu-toggle {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  /* Dropdown panel below header */
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: calc(var(--header-height) + 8px);
+    left: 1rem;
+    right: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #d8e2d8;
+    border-radius: var(--radius-md);
+    padding: 0.75rem;
+    box-shadow: none;
+    z-index: 999;
+  }
+
+  .main-nav.is-open {
+    display: block;
+    animation: menuFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #1c3b32;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    min-height: 48px;
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus-visible {
+    background-color: var(--bg-secondary);
+    color: #1c3b32;
+  }
+
+  .nav-links a.active {
+    background-color: #eef3ee;
+    border: 1px solid #d8e2d8;
+    color: #1c3b32;
+    font-weight: 700;
+  }
+
   .hero-greeting-container {
     flex-direction: column;
     text-align: center;
@@ -1523,6 +1684,7 @@ details.resume-card[open] .resume-chevron {
 }
 
 @media (max-width: 640px) {
+
   .hero-title,
   .hero-editorial-title {
     font-size: 2.5rem;
@@ -1565,11 +1727,6 @@ details.resume-card[open] .resume-chevron {
     padding-left: 0;
   }
 
-  .nav-links a {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.85rem;
-  }
-
   .study-highlight-card,
   .study-concentration {
     white-space: normal;
@@ -1606,5 +1763,44 @@ details.resume-card[open] .resume-chevron {
 
   .contact-card {
     padding: 24px 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-container {
+    padding: 0 0.75rem;
+  }
+
+  .brand-logo {
+    font-size: 1.125rem;
+    gap: 0.5rem;
+  }
+
+  .brand-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main-nav {
+    left: 0.75rem;
+    right: 0.75rem;
+  }
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
